@@ -3,3 +3,7 @@
   box-shadow: $boxShadow;
   border: $border;
 }
+
+@mixin colums($nCol) {
+  width: calc(100% / $ncol);
+}

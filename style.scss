@@ -33,10 +33,10 @@ header {
   padding-inline: $mdMP;
   background-color: $terColor;
   position: relative;
-  @include fadein(0s, 2s, 60px);
+  @include fadein(0s, 1s, 60px);
   .headImg {
     object-fit: cover;
-    @include fadein(2s, 4s, 60px);
+    @include fadein(1s, 2s, 30px);
     img {
       max-width: 800px;
     }
@@ -45,11 +45,11 @@ header {
     display: flex;
     flex-direction: column;
     p {
-      @include fadein(4s, 4s, 60px);
+      @include fadein(3s, 4s, 40px);
       font-size: $h2Dim;
     }
     h1 {
-      @include fadein(3s, 4s, 60px);
+      @include fadein(2s, 3s, 40px);
       font-size: $h1Dim;
       color: $primColor;
     }
@@ -66,6 +66,7 @@ header {
   }
 }
 main {
+  padding: $smMP;
   display: flex;
   position: relative;
   &::after {
@@ -100,6 +101,7 @@ main {
 }
 
 aside {
+  background-color: $primColor;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

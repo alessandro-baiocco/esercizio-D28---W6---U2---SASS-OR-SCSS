@@ -7,7 +7,7 @@
     }
     50% {
       opacity: 0.5;
-      bottom: $part/2;
+      bottom: calc($part / 2);
     }
     100% {
       opacity: 1;

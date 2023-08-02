@@ -13,16 +13,16 @@
 
 .btn-1 {
   background-color: #0e6cff;
-  animation: hAnim 4s 1s both;
+  animation: hAnim calc(5s + 1s) calc(1s + 4s) both;
 }
 @keyframes hAnim {
   0% {
     opacity: 0;
-    bottom: 60px;
+    bottom: 90px;
   }
   50% {
     opacity: 0.5;
-    bottom: 30px;
+    bottom: 45px;
   }
   100% {
     opacity: 1;
@@ -32,16 +32,16 @@
 
 .btn-2 {
   background-color: #ff8700;
-  animation: hAnim 4s 2s both;
+  animation: hAnim calc(5s + 2s) calc(2s + 4s) both;
 }
 @keyframes hAnim {
   0% {
     opacity: 0;
-    bottom: 60px;
+    bottom: 90px;
   }
   50% {
     opacity: 0.5;
-    bottom: 30px;
+    bottom: 45px;
   }
   100% {
     opacity: 1;
@@ -51,16 +51,16 @@
 
 .btn-3 {
   background-color: #4caf50;
-  animation: hAnim 4s 3s both;
+  animation: hAnim calc(5s + 3s) calc(3s + 4s) both;
 }
 @keyframes hAnim {
   0% {
     opacity: 0;
-    bottom: 60px;
+    bottom: 90px;
   }
   50% {
     opacity: 0.5;
-    bottom: 30px;
+    bottom: 45px;
   }
   100% {
     opacity: 1;
@@ -94,7 +94,7 @@ header {
   padding-inline: 20px;
   background-color: #d3e3fd;
   position: relative;
-  animation: hAnim 2s 0s both;
+  animation: hAnim 1s 0s both;
 }
 @keyframes hAnim {
   0% {
@@ -113,16 +113,16 @@ header {
 header .headImg {
   -o-object-fit: cover;
      object-fit: cover;
-  animation: hAnim 4s 2s both;
+  animation: hAnim 2s 1s both;
 }
 @keyframes hAnim {
   0% {
     opacity: 0;
-    bottom: 60px;
+    bottom: 30px;
   }
   50% {
     opacity: 0.5;
-    bottom: 30px;
+    bottom: 15px;
   }
   100% {
     opacity: 1;
@@ -137,17 +137,17 @@ header .headText {
   flex-direction: column;
 }
 header .headText p {
-  animation: hAnim 4s 4s both;
+  animation: hAnim 4s 3s both;
   font-size: 30px;
 }
 @keyframes hAnim {
   0% {
     opacity: 0;
-    bottom: 60px;
+    bottom: 40px;
   }
   50% {
     opacity: 0.5;
-    bottom: 30px;
+    bottom: 20px;
   }
   100% {
     opacity: 1;
@@ -155,18 +155,18 @@ header .headText p {
   }
 }
 header .headText h1 {
-  animation: hAnim 4s 3s both;
+  animation: hAnim 3s 2s both;
   font-size: 48px;
   color: #1b6ef3;
 }
 @keyframes hAnim {
   0% {
     opacity: 0;
-    bottom: 60px;
+    bottom: 40px;
   }
   50% {
     opacity: 0.5;
-    bottom: 30px;
+    bottom: 20px;
   }
   100% {
     opacity: 1;
@@ -185,6 +185,7 @@ header .headText div button {
 }
 
 main {
+  padding: 10px;
   display: flex;
   position: relative;
 }
@@ -219,6 +220,7 @@ main .mText h2 {
 }
 
 aside {
+  background-color: #1b6ef3;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
