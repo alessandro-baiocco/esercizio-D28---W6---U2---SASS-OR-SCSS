@@ -4,6 +4,7 @@
 @import "./scssFrament/spaceeeee.scss";
 @import "./scssFrament/animation.scss";
 @import "./scssFrament/buttons";
+@import "./scssFrament/mixin";
 
 nav {
   display: flex;
@@ -67,6 +68,18 @@ header {
 }
 main {
   display: flex;
+  position: relative;
+  &::after {
+    content: "";
+    @include floating(50%, 0px 0px 15px 9px #000000);
+    position: absolute;
+    bottom: -30px;
+    background: rgb(0, 0, 0);
+    width: 90%;
+    height: 4px;
+    left: 3%;
+    filter: blur(3px);
+  }
   .mImg {
     img {
       max-width: 700px;
@@ -91,7 +104,8 @@ aside {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: $mdMP;
+  padding: $lgMP;
+  margin-top: $lgMP;
 
   .primeDue {
     justify-content: space-around;
