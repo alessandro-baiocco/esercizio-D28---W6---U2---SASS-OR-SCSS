@@ -1,0 +1,106 @@
+@import "./scssFrament/reset.scss";
+@import "./scssFrament/color.scss";
+@import "./scssFrament/font.scss";
+@import "./scssFrament/spaceeeee.scss";
+@import "./scssFrament/animation.scss";
+@import "./scssFrament/buttons";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: $smMP;
+  background-color: $primColor;
+
+  ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    li {
+      padding: $smMP;
+      background-color: $quinColor;
+      margin-inline: $smMP;
+      font-size: $h2Dim;
+      border-radius: $bRad;
+    }
+  }
+}
+
+header {
+  margin-block: $mdMP;
+  display: flex;
+  justify-content: space-around;
+  padding-inline: $mdMP;
+  background-color: $terColor;
+  position: relative;
+  animation: hAnim 2s 0.1s both;
+  .headImg {
+    object-fit: cover;
+    img {
+      animation: hAnim 3s 0.5s both;
+      max-width: 800px;
+    }
+  }
+  .headText {
+    display: flex;
+    flex-direction: column;
+    p {
+      animation: hAnim 2s 0.1s both;
+      font-size: $h2Dim;
+    }
+    h1 {
+      animation: hAnim 2s 0.1s both;
+      font-size: $h1Dim;
+      color: $primColor;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-top: auto;
+      button {
+        animation: hAnim 2s 0.1s both;
+        margin: $xsMP;
+        border-radius: $bRad2;
+        font-size: $pDim;
+      }
+    }
+  }
+}
+main {
+  display: flex;
+  .mImg {
+    img {
+      max-width: 700px;
+      height: 100%;
+    }
+  }
+  .mText {
+    background-image: url(https://images.unsplash.com/photo-1558874001-dc7dbb4bfe11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+    padding: $smMP;
+    p {
+      font-size: $pDim;
+      color: $secColor;
+    }
+    h2 {
+      color: $primColor;
+      font-size: $h3Dim;
+    }
+  }
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: $mdMP;
+
+  .primeDue {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $lgMP;
+    img {
+      max-width: 60vh;
+      height: 100%;
+    }
+  }
+}

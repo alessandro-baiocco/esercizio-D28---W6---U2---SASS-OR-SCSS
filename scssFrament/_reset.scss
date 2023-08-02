@@ -1,0 +1,13 @@
+// ----------------------------reset-------------------
+* {
+  &::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  &::before {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  box-sizing: border-box;
+  margin: 0;
+}
