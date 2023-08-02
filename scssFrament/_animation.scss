@@ -1,14 +1,17 @@
-@keyframes hAnim {
-  0% {
-    opacity: 0;
-    bottom: 30px;
-  }
-  50% {
-    opacity: 0.5;
-    bottom: 15px;
-  }
-  100% {
-    opacity: 1;
-    bottom: 0px;
+@mixin fadein($rit, $dur, $part: 30px) {
+  animation: hAnim $dur $rit both;
+  @keyframes hAnim {
+    0% {
+      opacity: 0;
+      bottom: $part;
+    }
+    50% {
+      opacity: 0.5;
+      bottom: $part/2;
+    }
+    100% {
+      opacity: 1;
+      bottom: 0px;
+    }
   }
 }

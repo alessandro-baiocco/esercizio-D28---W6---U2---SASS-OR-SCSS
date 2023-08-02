@@ -33,11 +33,11 @@ header {
   padding-inline: $mdMP;
   background-color: $terColor;
   position: relative;
-  animation: hAnim 2s 0.1s both;
+  @include fadein(0s, 2s, 60px);
   .headImg {
     object-fit: cover;
+    @include fadein(2s, 4s, 60px);
     img {
-      animation: hAnim 3s 0.5s both;
       max-width: 800px;
     }
   }
@@ -45,11 +45,11 @@ header {
     display: flex;
     flex-direction: column;
     p {
-      animation: hAnim 2s 0.1s both;
+      @include fadein(4s, 4s, 60px);
       font-size: $h2Dim;
     }
     h1 {
-      animation: hAnim 2s 0.1s both;
+      @include fadein(3s, 4s, 60px);
       font-size: $h1Dim;
       color: $primColor;
     }
@@ -58,7 +58,6 @@ header {
       flex-direction: column;
       margin-top: auto;
       button {
-        animation: hAnim 2s 0.1s both;
         margin: $xsMP;
         border-radius: $bRad2;
         font-size: $pDim;

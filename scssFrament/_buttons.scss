@@ -1,5 +1,6 @@
 @each $key, $value in $givedColors {
   .btn-#{$key} {
     background-color: $value;
+    @include fadein(#{$key}s, 4s, 60px);
   }
 }
